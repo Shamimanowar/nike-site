@@ -5,7 +5,7 @@ import { socialMedia, footerLinks } from "../constants";
 const Footer = () => {
   return (
     <footer className="max-container">
-      <div className="text-white-400 flex gap-10 lg:gap-16 max-md:flex-col">
+      <div className="text-white-400 flex gap-10 lg:gap-24 max-md:flex-col pt-2">
         <div className="">
           <a href="/" className="pointer-cursor text-white-400">
             <img
@@ -16,7 +16,7 @@ const Footer = () => {
               className="m-0"
             />
           </a>
-          <p className="font-montserrat mt-6 text-base text-white-400 sm:max-w-sm leading-7">
+          <p className="font-montserrat mt-6 text-base text-white-400 sm:max-w-lg leading-7">
             Get shoes ready for the new term at your nearest Nike store. Find
             Your perfect Size In Store. Get Rewards
           </p>
