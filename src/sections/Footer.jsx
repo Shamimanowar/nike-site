@@ -54,13 +54,13 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row justify-between items-center text-white-400 cursor-pointer font-montserrat flex-1 gap-2 leading-[16px] mt-20 lg:mt-35">
-        <div className="flex justify-center items-center gap-2">
+      <div className="flex flex-col sm:flex-row justify-between items-center text-white-400 font-montserrat flex-1 gap-2 leading-[16px] mt-20 lg:mt-35">
+        <div className="flex justify-center items-center gap-2 cursor-pointer font-montserrat">
           {" "}
           <img src={copyrightSign} alt="copyright sign" /> Copyright, All rights
           reserved.
         </div>
-        <p>Terms & Conditions</p>
+        <p className=" cursor-pointer font-montserrat">Terms & Conditions</p>
       </div>
     </footer>
   );

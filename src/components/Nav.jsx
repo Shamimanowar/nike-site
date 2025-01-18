@@ -1,8 +1,11 @@
+import { useState } from "react";
+
 import { headerLogo } from "../assets/images";
 import { hamburger } from "../assets/icons";
 import { navLinks } from "../constants";
 
 const Nav = () => {
+  const [clicked, setClicked] = useState(false);
   return (
     <header className="absolute padding-x py-8 z-10 w-full">
       <nav className="flex justify-between items-center max-container">
@@ -30,7 +33,7 @@ const Nav = () => {
         </div>
 
         {/* Hamburger Menu */}
-        <div>
+        <div onClick={() => setClicked((prev) => !prev)} className="relative">
           <img
             src={hamburger}
             alt="Hamburger"
@@ -38,6 +41,33 @@ const Nav = () => {
             height={25}
             className="lg:hidden"
           />
+
+          {clicked && (
+            <div className="lg:hidden absolute bg-black w-[200px] top-6 right-0 shadow-3xl">
+              <ul className="mt-[10px] flex flex-col gap-1 p-4 leading-normal">
+                <li className="font-montserrat text-white hover:text-coral-red">
+                  <a href="#products" className="no-underline">
+                    Products
+                  </a>
+                </li>
+                <li className="font-montserrat text-white hover:text-coral-red">
+                  <a href="#about-us" className="no-underline">
+                    About us
+                  </a>
+                </li>
+                <li className="font-montserrat text-white hover:text-coral-red">
+                  <a href="#contact-us" className="no-underline">
+                    Contact us
+                  </a>
+                </li>
+                <li className="font-montserrat text-white hover:text-coral-red">
+                  <a href="#contact-us" className="no-underline">
+                    Social media
+                  </a>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       </nav>
     </header>
