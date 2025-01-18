@@ -22,7 +22,7 @@ const PopularProductCard = ({ product }) => {
           <p className="text-xl font-montserrat">(4.5)</p>
         </div>
 
-        <h3 className="text-2xl font-semibold font-montserrat mt-4">
+        <h3 className="text-2xl font-semibold font-palanquin mt-4">
           {product.name}
         </h3>
         <p className="text-2xl leading-normal font-semibold font-montserrat text-coral-red mt-4">
